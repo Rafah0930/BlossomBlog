@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Blossom</div>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="blog">Blog</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+                <li><a href="#" data-page="new-post">New Post</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Blossom</h1>
+                <p>Discover tips and stories to inspire your personal growth and well-being.</p>
+                <a href="#" class="btn btn-primary" data-page="blog">Explore Our Blog</a>
+            </div>
+        </section>
+
+
+    <section id="about" class="about-section">
+        <h2>About Rafa</h2>
+        <p>Hello there! I'm Rafa, a passionate explorer of life's wonders and a dedicated writer. My journey is fueled by a deep curiosity about human potential and the intricacies of personal growth. With a background in psychology and a heart for creativity, I weave stories that inspire and insights that provoke thought.</p>
+        <p>Whether it's delving into the power of positive thinking, navigating the depths of mindfulness, or uncovering creative strategies for productivity, I believe in sharing knowledge that uplifts and empowers. Join me on this journey to blossom into the best version of ourselves, one blog post at a time.</p>
+        <p>Let's embark on this transformative journey together. Welcome to Blossom, where every word is crafted with intention and every story unfolds with purpose.</p>
+    </section>
+
+
+        <section id="blog" class="blog-section" style="display:none;">
+            <h2>Our Blog</h2>
+            <div class="blog-post">
+                <h3>The Power of Positive Thinking</h3>
+                <p>Positive thinking is not just a fleeting emotion but a transformative mindset that can profoundly impact your life. By embracing positive thinking, you can cultivate resilience and grace in the face of challenges. Discover practical tips and strategies that empower you to shift your perspective, enhance your problem-solving skills, and navigate life with a renewed sense of optimism. Explore how simple changes in thought patterns can lead to significant improvements in your overall well-being and success.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Mindfulness for Everyday Life</h3>
+                <p>In today's fast-paced world, mindfulness offers a sanctuary of calm and clarity. It's about being fully present in each moment, cultivating awareness without judgment, and embracing life's experiences with a sense of openness and acceptance. Explore the benefits of mindfulness practices and learn how to integrate them into your daily routine. Discover techniques that help reduce stress, improve focus, and enhance your overall quality of life. Whether you're at work, home, or amidst daily chaos, mindfulness provides a pathway to inner peace and balance.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Creative Ways to Boost Productivity</h3>
+                <p>Productivity isn't just about doing more; it's about doing meaningful work efficiently. Unleash your creative potential with innovative strategies that go beyond traditional productivity tips. From time management hacks tailored to your unique style to engaging creative exercises that stimulate your mind, discover practical approaches to boost productivity. Whether you're a freelancer, student, or entrepreneur, these strategies will help you maximize your output while maintaining a healthy work-life balance. Elevate your productivity and creativity to achieve your goals with confidence and satisfaction.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div id="dynamic-blog-posts"></div>
+        </section>
+
+        <section id="contact" class="contact-section" style="display:none;">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="new-post" class="new-post-section" style="display:none;">
+            <h2>Create New Post</h2>
+            <form id="new-post-form">
+                <label for="post-title">Title</label>
+                <input type="text" id="post-title" name="post-title" required>
+                <label for="post-content">Content</label>
+                <textarea id="post-content" name="post-content" rows="4" required></textarea>
+                <button type="submit">Create Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blossom. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
